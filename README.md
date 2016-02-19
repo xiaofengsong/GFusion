@@ -1,9 +1,13 @@
 # GFusion
 
 GFusion is a software package to discovery fusion genes using RNA-Seq data.
+
 The first public release of Gfusion is now available for download. 
+
 Usage:
+
 GFusion.pl #GFusion accepts RNA-Seq data input file of fastq format.
+
 Software Prerequisites:
 To use GFusion, you need to install Tophat , Bowtie, Samtools, Bioperl module firstly. 
 TopHat: a fast splice junction mapper for RNA-Seq reads;
