@@ -53,6 +53,7 @@ Example files download:
 4. Output file: fusion_gene_list.txt can be downloaded from http://bioinfo.nuaa.edu.cn/GFusion/fusion_gene_list.txt
 
 Software Prerequisites:
+
 The following three software should be installed in your cluster or computer before running the GFusion.pl
 
 TopHat: a fast splice junction mapper for RNA-Seq reads;
