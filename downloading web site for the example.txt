@@ -1,0 +1,3 @@
+test_1.fastq and test_2.fastq can be downloaded from http://bioinfo.nuaa.edu.cn/GFusion/test_fastq.zip
+
+The output file (fusion genes list) can be downloaded from http://bioinfo.nuaa.edu.cn/GFusion/fusion_gene_list.txt
