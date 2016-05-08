@@ -27,8 +27,8 @@ perl GFusion.pl -o output -r 0 -p 12 -i /path/hg19 -g /path/genes.gtf -1 /path/t
 Example files download:
 1. The alignment index file (-index): BowtieIndex files (Homo_sapiens, hg19 version) can be downloaded from http://ccb.jhu.edu/software/tophat/igenomes.shtml; 
 2. The genome annotation file (-gtf): GTF file can be downloaded from http://ccb.jhu.edu/software/tophat/igenomes.shtml;
-3. Input file :The fastq format file (zip file) -- see example directory
-4. Output file: fusion_gene_list.txt -- The reported Fusion genes list : see example directory
+3. Input file :The fastq format file: test_1.fastq, test_2.fastq can be downloaded from http://bioinfo.nuaa.edu.cn/GFusion/test_fastq.zip 
+4. Output file: fusion_gene_list.txt can be downloaded from http://bioinfo.nuaa.edu.cn/GFusion/fusion_gene_list.txt
 
 Software Prerequisites:
 The following three software should be installed in your cluster or computer before running the GFusion.pl
