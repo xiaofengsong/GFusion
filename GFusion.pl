@@ -119,7 +119,7 @@ USAGE
 		system("bowtie -p $thread $bowtie_index $out_file/un.fastq -S $fusion_out/un.sam");
 
 		system("samtools view -F4 -b -S $fusion_out/un.sam > $fusion_out/un.bam");
-		system("samtools sort -n $fusion_out/un.bam $fusion_out/un_S");
+		system("samtools sort -n $fusion_out/un.bam -o $fusion_out/un_S");
 		system("samtools view $fusion_out/un_S.bam > $fusion_out/un_S.sam");
 		system("samtools view -H $fusion_out/un_S.bam > $fusion_out/pos_header.sam");
 		&both_filter;	
@@ -129,7 +129,7 @@ USAGE
 		&locating("$fusion_out/pos_S.sam","$fusion_out/pos_locale.sam","$fusion_out/pos_header.sam");
 	
 		system("samtools view -b -S $fusion_out/pos_locale.sam > $fusion_out/pos_locale.bam");
-		system("samtools sort -n $fusion_out/pos_locale.bam $fusion_out/pos_locale_S");
+		system("samtools sort -n $fusion_out/pos_locale.bam -o $fusion_out/pos_locale_S");
 		system("samtools view $fusion_out/pos_locale_S.bam > $fusion_out/pos_locale_S.sam");
 
 		&pos_filter;  #>choice pos_both.sam
@@ -150,7 +150,7 @@ USAGE
 		&locating("$fusion_out/pair_S.sam","$fusion_out/pair_locale.sam","$fusion_out/pair_header.sam");
 
 		system("samtools view -b -S $fusion_out/pair_locale.sam > $fusion_out/pair_locale.bam");
-		system("samtools sort -n $fusion_out/pair_locale.bam $fusion_out/pair_locale_S");
+		system("samtools sort -n $fusion_out/pair_locale.bam -o $fusion_out/pair_locale_S");
 		system("samtools view $fusion_out/pair_locale_S.bam > $fusion_out/pair_locale_S.sam");
 
 
@@ -186,7 +186,7 @@ USAGE
 		system("tophat -o $fusion_out --bowtie1 -p $thread -r $segment_length --no-coverage-search $bowtie_index $out_file/un_1.fastq $out_file/un_2.fastq");
 		
 		system("samtools view -bh -q30 -F12 $fusion_out/accepted_hits.bam > $fusion_out/top_accQfi.bam");	
-		system("samtools sort -n $fusion_out/top_accQfi.bam $fusion_out/un_S");
+		system("samtools sort -n $fusion_out/top_accQfi.bam -o $fusion_out/un_S");
 		system("samtools view $fusion_out/un_S.bam > $fusion_out/un_S.sam");
 		system("samtools view -H $fusion_out/un_S.bam > $fusion_out/pos_header.sam");
 
@@ -198,7 +198,7 @@ USAGE
 
 		
 		system("samtools view -b -S $fusion_out/pos_locale.sam > $fusion_out/pos_locale.bam");
-		system("samtools sort -n $fusion_out/pos_locale.bam $fusion_out/pos_locale_S");
+		system("samtools sort -n $fusion_out/pos_locale.bam -o $fusion_out/pos_locale_S");
 		system("samtools view $fusion_out/pos_locale_S.bam > $fusion_out/pos_locale_S.sam");
 
 		&pos_filter;  #>choice pos_both.sam		
