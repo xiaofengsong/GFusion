@@ -3,7 +3,7 @@ GFusion is a software package to detect fusion genes using RNA-Seq data
 
 Download the latest version of GFusion. Version: 1.0.0. 
 
-Authors: Qi Chen, Xiaofeng Song (xfsong@nuaa.edu.cn)
+Authors: Jian Zhao, Qi Chen, Xiaofeng Song (xfsong@nuaa.edu.cn)
 
 Usage:
 
@@ -87,7 +87,7 @@ GFusion will report the fusion genes in the output/result file. The information 
 9. the number of spanning reads 
 
 Reference:
-Qi Chen, Ping Han, Xiaofeng Song. GFusion: a Novel Algorithm to Identify Fusion Genes from Cancer RNA-Seq Data. (under review in peer-reviewed journal)
+Jian Zhao, Qi Chen, Jing Wu, Ping Han, Xiaofeng Song. GFusion: an Effective Algorithm to Identify Fusion Genes from Cancer RNA-Seq Data. Scientific reports 7.1 (2017): 6880
 
 Copyright (C) 2016 Xiaofeng Song.
 
